@@ -1,0 +1,136 @@
+body{
+    background-color: #0D0D0D;
+    margin: 0;
+    color: #F9F6F6 ;
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+#loading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0D0D0D;
+    z-index: 1050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+/***************** menu ******************/
+
+#menu img{
+    width: 50px;
+}
+
+#menu .menu-header .bars{
+    cursor: pointer;
+}
+
+#menu .menu-header{
+    padding: 24px 8px;
+    min-height: 100vh;
+}
+#menu .menu-content{
+    padding: 24px;
+    min-height: 100vh;
+    width: 260px;
+}
+#menu ul li{
+    cursor: pointer;
+}
+#menu .share i{
+    cursor: pointer;
+}
+
+
+
+#menu .menu-content .links li{
+    padding: 8px 0px;
+    top: 400px;
+    position: relative;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    left: -260px;
+    min-height: 100vh !important;
+    z-index: 99;
+    background-color: #0D0D0D;
+} 
+
+/******************************************* main meals **************************************************/
+
+
+#main .row img{
+    width: 100%;
+}
+
+#main .row .meal{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+#main .row .meal img{
+    border-radius: 6px;
+}
+#main .row .meal:hover .overlay{
+    transform: translateY(0);
+}
+
+
+#main .row .meal .overlay{
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f6f6ca;
+    display: flex;
+    align-items: center;
+    color: black;
+    transform: translateY(110%);
+    transition: all 0.5s;
+}
+
+.fa-x{
+    cursor: pointer;
+}
+
+/* .form-control{
+    background-color: transparent !important;
+} */
+
+::placeholder{
+    color: #6C757D !important;
+}
+
+h3 .special{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+@media (max-width:576px)
+{
+    .container {
+    max-width: 540px !important;
+}
+}
+
